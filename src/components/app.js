@@ -12,12 +12,12 @@ function App() {
         <div>
           <div>
             <NavLink to="/houses" activeStyle={{ color: "red" }}>
-              articles
+              Houses
             </NavLink>
           </div>
           <div>
             <NavLink to="/characters" activeStyle={{ color: "red" }}>
-              counter
+                Characters
             </NavLink>
           </div>
         </div>

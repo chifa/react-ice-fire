@@ -8,6 +8,7 @@ import {
 } from "../../selectors";
 import { fetchHouses } from "../../action_creators";
 import Loader from "../loader";
+import house from "../house/house";
 
 @connect(
   state => ({
@@ -38,13 +39,13 @@ class HouseList extends Component {
 
     if (isLoading) return <Loader />;
 
+
     return (
       <div>
         {houses.map(house => (
           <House
-            key={house.id}
+            key={house.url}
             house={house}
-            onBtnClick={setOpenId(house.id)}
           />
         ))}
       </div>
